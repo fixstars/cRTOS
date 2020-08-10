@@ -1,0 +1,20 @@
+[submodule "crtos-nuttx"]
+	path = crtos-nuttx
+	url = git@github.com:fixstars/cRTOS-nuttx.git
+	branch = cRTOS
+[submodule "crtos-loader"]
+	path = crtos-loader
+	url = git@github.com:fixstars/cRTOS-loader.git
+	branch = master
+[submodule "crtos-drivers"]
+	path = crtos-drivers
+	url = git@github.com:fixstars/cRTOS-drivers.git
+	branch = master
+[submodule "crtos-nuttx-apps"]
+	path = crtos-nuttx-apps
+	url = git@github.com:fixstars/cRTOS-nuttx-apps.git
+	branch = cRTOS-Daemon
+[submodule "crtos-jailhouse"]
+	path = crtos-jailhouse
+	url = git@github.com:fixstars/cRTOS-jailhouse.git
+	branch = cRTOS
