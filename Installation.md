@@ -159,8 +159,8 @@ Having the backing memory allocated, we now need to create the PCI devices for i
 Navigates to the PCI device regions of the configuration files.
 
 Add 2 ivshmem devices to it.
-You need to modify the <DOM> and <IOMMU> according to you system.
-For the supermirco setup, the value is 0 for <DOM> and 1 for <IOMMU>.
+You need to modify the `<DOM>` and `<IOMMU>` according to you system.
+For the supermirco setup, the value is 0 for `<DOM>` and 1 for `<IOMMU>`.
 Inquiry the Jailhouse mailing lit for more information.
 (Seriously, I have no idea how to decide these values. I also inquired the mailing list.)
 ```
@@ -230,7 +230,7 @@ For example, assigning core 3 (counting from 0):
 With a Xeon processor, you are able to dedicate parts of the LLC to the sRTOS.
 This is done via the cache_regions setting.
 
-For example to give <S> slices of the LLC, starting from 0, to the sRTOS.
+For example to give `<S>` slices of the LLC, starting from 0, to the sRTOS.
 (Number of slice and slice size is processor dependent.)
 ```
 .cache_regions = {
@@ -309,7 +309,7 @@ Having the backing memory allocated, we now need to create the PCI devices for i
 
 Navigates to the PCI device regions of the configuration files.
 
-Add 2 ivshmem devices to it. For <DOM> and <IOMMU> setting from root cell configuration.
+Add 2 ivshmem devices to it. For `<DOM>` and `<IOMMU>` setting from root cell configuration.
 ```
 { /* Shadow */
   .type = JAILHOUSE_PCI_TYPE_IVSHMEM,
